@@ -62,10 +62,9 @@ function initMap() {
     ko.applyBindings(new ViewModel());
 }
 
-//Location class constructor
+//Location object constructor
 var Places = function(data) {
     this.name = ko.observable(data.name);
-
     this.mapError = ko.observable('');
 
 };
@@ -74,9 +73,9 @@ var Places = function(data) {
 var ViewModel = function() {
     var self = this;
     self.locations = ko.observableArray();
-    this.filter = ko.observableArray(self.locations());
-    this.locationInput = ko.observable('');
-    this.errorMessage = ko.observable('');
+    self.filter = ko.observableArray(self.locations());
+    self.locationInput = ko.observable('');
+    self.errorMessage = ko.observable('');
     self.temp = ko.observable('');
 
 
