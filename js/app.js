@@ -66,7 +66,6 @@ function initMap() {
 var Places = function(data) {
     this.name = ko.observable(data.name);
     this.mapError = ko.observable('');
-
 };
 
 // Knockout ViewModel
@@ -78,11 +77,10 @@ var ViewModel = function() {
     self.errorMessage = ko.observable('');
     self.temp = ko.observable('');
 
-
     // InfoWindow object
     var largeInfowindow = new google.maps.InfoWindow();
 
-    // Filter list forEach method
+    // Filter list
     placesList.forEach(function(data) {
         var location = new Places(data);
         var position = placesList.location;
