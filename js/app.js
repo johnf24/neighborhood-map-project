@@ -33,10 +33,24 @@ var placesList = [{
         }
     },
     {
-        name: 'Revelator Coffee Company',
+        name: 'Blue Donkey Craft Coffee',
         location: {
-            lat: 33.7863157,
-            lng: -84.4114922
+            lat: 33.778757,
+            lng: -84.409679
+        }
+    },
+    {
+        name: 'Brash Coffee',
+        location: {
+            lat: 33.778757,
+            lng: -84.409679
+        }
+    },
+    {
+        name: 'Octane Coffee Bar',
+        location: {
+            lat: 33.7894552,
+            lng: -84.3862338
         }
     },
     {
@@ -44,6 +58,13 @@ var placesList = [{
         location: {
             lat: 33.7776531,
             lng: -84.40900679999998
+        }
+    },
+    {
+        name: 'Eastpole Coffee Co',
+        location: {
+            lat: 33.8103946,
+            lng: -84.3786836
         }
     }
 ];

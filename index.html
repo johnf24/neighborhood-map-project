@@ -13,18 +13,14 @@
     <div class="container">
       <div class="options-box">
         <h1>Atlanta Coffee Houses</h1>
-        <hr>
         <div>
-          <span class="text">Search</span>
-            <input id="places-search" type="search" placeholder="Ex: Starbucks" data-bind="value: locationInput, valueUpdate: 'keyup'">
+            <input id="places-search" type="search" placeholder="Search" data-bind="value: locationInput, valueUpdate: 'keyup'">
             <ul data-bind="foreach: listFilter" style="list-style: none">
               <li data-bind="text: name, click: $parent.locationClicked"></li>
             </ul>
         </div>
-        <hr>
         <div>
           <h2>Current Weather</h2>
-          <hr>
           <div id="temperature-box" data-bind= "text: temp">
         </div>
       </div>

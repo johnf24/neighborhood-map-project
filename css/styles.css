@@ -2,8 +2,8 @@ html,
 body {
   height: 100%;
   margin: 0;
-  padding: 0;
-  background: #f9f9f9;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -16,36 +16,45 @@ input {
 }
 
 h1 {
-  color: #525454;
+  color: grey;
   font-size: 22px;
   margin: 0 0 10px 0;
   text-align: center;
+  background-color: #f2f2f2
 }
 
 h2 {
-  color: #525454;
+  color: grey;
   font-size: 17px;
   margin: 0 0 10px 0;
   text-align: center;
+  background-color: #f2f2f2
 }
 
 #map {
   bottom:0px;
   height: 100%;
-  left: 362px;
+  left: 370px;
   position: absolute;
   right: 0px;
+  border-radius: 3px;
+}
+
+.options-box ul li {
+  text-align: left;
 }
 
 .options-box {
-  background: #f9f9f9;
-  border-right: 1px solid #999;
-  border-radius: 3px;
   height: 100%;
   line-height: 35px;
   padding: 10px 10px 30px 10px;
-  text-align: left;
+  margin: 2px;
+  text-align: center;
   width: 340px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d3d3d3;
+  border-radius: 3px;
 }
 
 #temperature-box {
@@ -58,6 +67,12 @@ h2 {
 
 #places-search {
   width: 84%;
+  height: 25px;
+  text-align: center;
+  border-radius: 28px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d3d3d3;
 }
 
 /* Device breakpoints*/
@@ -66,7 +81,6 @@ h2 {
     width: 50%;
   }
   .options-box {
-    background: #f9f9f9;
     border-radius: 3px;
     height: 100%;
     line-height: 35px;
